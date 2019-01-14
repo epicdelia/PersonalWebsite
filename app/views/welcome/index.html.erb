@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+	<link rel="stylesheet" href="css/welcome.css" />
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>I just graduated from the Business and Computer Science Double Degree Co-op program at <a href="#"> Wilfrid Laurier University</a> <p>
+		<p>I am passionate about using innovative technologies to solve business problems<p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+		<h3><a href="#"<%= link_to post.title, post %> </a></h3> 
+		<p class="date"> <%= post.created_at.strftime("%A, %b, %d") %> </p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff I've built</h2>
+		<hr>
+		<a href="#">This simple HTML game</a> 
+		<p class="date">Friday April 16th</p>
+		<a href="#">Automated Blinds using a Servo</a> 
+		<p class="date">Friday April 16th</p>
+		<a href="#">A 3D printer</a> 
+		<p class="date">Friday April 16th</p>
+	</div>
+</div>

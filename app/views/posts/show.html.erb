@@ -1,12 +1,25 @@
-<%= @post.title %>
-<br>
-<%= @post.content %>
-
-<br>
-<br>
+<div id="post_show_content" class ="skinny_wrapper wrapper_padding">
+	<header>
+	<p class= "date"> <%= @post.created_at.strftime('%A, %B, %d') %> </p>
+	<h1> <%= @post.title %> </h1>
+	<hr>
+	</header>
+	<div id="content">
+		<%= @post.content %>
+		<p>
+			orem ipsum dolor amet disrupt drinking vinegar offal fam gochujang kitsch banjo. Pork belly salvia mixtape mustache tote bag chia etsy hashtag seitan portland. Meh iPhone food truck umami, forage lomo mixtape sartorial semiotics woke hoodie marfa jianbing waistcoat try-hard. Pitchfork stumptown tumblr, lomo ennui pok pok chambray XOXO. Cray fanny pack edison bulb ennui, live-edge pitchfork food truck salvia.
+		</p>
+	</div>
+	<hr>
+	<div id="share_box">
+		<p>Share the DO list</p>
+		<a href="#"><i class="fab fa-github"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+	</div>
+	<hr>
+</div>
 
 <%= link_to "Edit", edit_post_path(@post) %>
-
-
 <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
 

@@ -23,6 +23,49 @@
 
 }
 
+#post_show_content header {
+	text-align: center;
+}
+
+#post_show_content.date{
+	font-size: .9em;
+	color: #8bc6db;
+	margin: 0;
+}
+
+#post_show_content h1{
+	margin: 0;
+
+}
+
+#post_show_content hr{
+	margin: 2em auto;
+
+}
+
+#share_box{
+	text-align: center;
+}
+
+#share_box p{
+	padding: 0 0 1em 0;
+	margin: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+/*	color: ;
+*/
+	font-size: .8em;
+}
+
+#share_box i{
+	padding: 1em 1.5em;
+}
+
+i:hover{
+	cursor: pointer;
+	color: #8bc6db;
+}
+
 #posts_wrapper hr{
 	margin: 3rem auto;
 }

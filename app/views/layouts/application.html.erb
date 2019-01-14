@@ -5,9 +5,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 </style>
-  <title>Delia Lazarescu- Business and Computer Science</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +12,7 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name"> Delia Lazarescu </a>
+  <%= link_to "Delia Lazarescu", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", posts_path %> 
         <a href="#">Projects</a>
@@ -24,5 +21,14 @@
     </header>
 
     <%= yield %>
+  <footer id="main_footer">
+    <p class="copyright"> &copy; 2019 Delia Lazarescu </p>
+    <nav>
+      <a href="http://github.com/epicdelia"  target="_blank"><i class="fab fa-github"></i></a>
+      <a href="http://instagram.com/epicdelia" target= "_blank"><i class="fab fa-instagram"></i></a>
+      <a href="http://twitter.com/midnsneeze" target= "_blank"><i class="fab fa-twitter"></i></a>
+    </nav>
+
+  </footer>
   </body>
 </html>

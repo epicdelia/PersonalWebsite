@@ -1,4 +1,9 @@
-@import 'normalize';
+ /*
+ *= require_tree .
+ *= require_self
+ */
+
+ @import 'normalize';
 
 #main_navigation{
 	padding: 2.5em 5%;	
