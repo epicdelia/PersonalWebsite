@@ -3,7 +3,10 @@
  *= require_self
  */
 
- @import 'normalize';
+@import 'normalize';
+@import 'welcome';
+@import 'posts_projects';
+@import 'pygments';
 
 #main_navigation{
 	padding: 2.5em 5%;	
@@ -161,7 +164,3 @@ i {
 i:hover {
 	color: #8bc6db;
 	}
-}
-@import 'welcome';
-@import 'posts_projects';
-@import 'pygments';
