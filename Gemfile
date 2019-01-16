@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 git_source(:github) { |repo| "http://github.com/#{repo}.git" }
 
-gem 'pg' , '~> 1.1.4'
+gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use Puma as the app server
@@ -40,7 +40,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg' , '~> 1.1.4'
+  gem 'pg'
 end
 group :production do
   gem 'rails_12factor'
