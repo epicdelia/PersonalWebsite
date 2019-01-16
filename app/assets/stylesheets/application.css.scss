@@ -1,10 +1,7 @@
-*= require normalize-rails
-*= require_self
-*= require_tree .
-
-@import 'welcome';
-@import 'posts_projects';
-@import 'pygments';
+@import "normalize.css";
+@import "welcome.css";
+@import "posts_projects.css";
+@import "pygments.css";
 
 #main_navigation{
 	padding: 2.5em 5%;	
