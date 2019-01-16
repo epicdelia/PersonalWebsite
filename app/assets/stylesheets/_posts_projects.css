@@ -72,7 +72,7 @@ i:hover{
 
 //----Pagination
 
-.pagination:before;87
+.pagination:before;
 .pagination:after {
 	content: " ";
 	display: table;
