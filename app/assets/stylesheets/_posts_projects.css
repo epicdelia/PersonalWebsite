@@ -70,8 +70,6 @@ i:hover{
 	margin: 3rem auto;
 }
 
-//----Pagination
-
 .pagination:before,
 .pagination:after {
 	content: " ";

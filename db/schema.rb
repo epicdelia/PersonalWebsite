@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_01_12_234027) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
@@ -22,11 +25,6 @@ ActiveRecord::Schema.define(version: 2019_01_12_234027) do
   create_table "todo_lists", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "todo_ps", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
