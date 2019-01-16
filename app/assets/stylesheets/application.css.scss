@@ -1,7 +1,11 @@
-@import "normalize.css";
-@import "welcome.css";
-@import "posts_projects.css";
-@import "pygments.css";
+/* ...    
+*= require_self    
+*/
+
+@import 'normalize';
+@import 'welcome';
+/*@import 'posts_projects';*/
+@import 'pygments';
 
 #main_navigation{
 	padding: 2.5em 5%;	
