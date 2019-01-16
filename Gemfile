@@ -59,3 +59,5 @@ gem "redcarpet", "~> 3.4"
 gem "devise", "~> 4.5"
 
 gem "postgresql", "~> 1.0"
+
+gem "webpacker", require: false
