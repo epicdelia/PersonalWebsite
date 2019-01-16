@@ -72,7 +72,6 @@ i:hover{
 
 //----Pagination
 
-.pagination:before;
 .pagination:after {
 	content: " ";
 	display: table;
