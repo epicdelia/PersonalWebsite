@@ -1,12 +1,9 @@
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+source 'http://rubygems.org'
+git_source(:github) { |repo| "http://github.com/#{repo}.git" }
 
-ruby '2.3.7'
-
+gem 'pg' , '~> 1.1.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -42,13 +39,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'sqlite3'
-end
-
 group :production do
-  gem 'pg';
+  gem 'pg' , '~> 1.1.4'
+end
+group :production do
   gem 'rails_12factor'
 end
 
@@ -60,3 +54,7 @@ gem "pygments.rb", "~> 1.2"
 gem "redcarpet", "~> 3.4"
 
 
+
+gem "devise", "~> 4.5"
+
+gem "postgresql", "~> 1.0"
