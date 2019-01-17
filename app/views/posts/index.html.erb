@@ -1,1 +1,13 @@
-<h1>"Hello world"</h1>
+<%= <% if !posts.blank? %>
+	<% for item in posts %>
+		 <% if @post.errors.any? %>
+	<h2> <% pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
+	<ul>
+		<% @post.errors.full_messages.each do |msg| %>
+		<li> <% msg %> </li>
+	</ul>
+	<%end %>
+	<% end %>
+<% else %>
+
+<%end %>
