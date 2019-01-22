@@ -6,6 +6,8 @@ gem 'pg'
 
 gem 'normalize-rails'
 
+gem 'will_paginate', '~> 3.1.0'
+
 gem 'rails', '~> 5.2.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
