@@ -6,6 +6,7 @@ gem 'pg'
 
 gem 'normalize-rails'
 
+gem "mail_form", ">= 1.3.0"
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'rails', '~> 5.2.1'
