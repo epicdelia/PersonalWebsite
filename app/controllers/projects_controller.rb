@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+<<<<<<< HEAD
 	def index
 		@projects = Projects.all.order("created_at desc")
 	end
@@ -20,4 +21,6 @@ class ProjectsController < ApplicationController
 	def project_params 
 		params.require(:project).permit(:title, :description, :link)
 	end 
+=======
+>>>>>>> master
 end

@@ -83,7 +83,38 @@ i:hover{
 
 .pagination {
 
-text-align: center;
-margin: 3em 0 0 0;
+	text-align: center;
+	margin: 3em 0 0 0;
 
+}
+
+.pagination a, .previous_page, .current, .next_page{
+
+	padding: .75em 1em;
+	margin: 0 .5em;
+	border-radius: .15em;
+	line-height: 20px;
+	text-decoration: none;
+	background: #FFFFFF;
+	font-weight: 700;
+	font-size: .7em;
+	font-style: normal;
+	color: #424652;
+	&:hover{
+		background: #8bc6db;
+		color: #FFFFFF;
+	};
+}
+
+.current {
+	background: #8bc6db;
+	color: #FFFFFF;
+}
+
+.disabled {
+	color: #C0C0C0;
+	&:hover{
+		color: #C0C0C0;
+		background: #FFFFFF;
+	}
 }
