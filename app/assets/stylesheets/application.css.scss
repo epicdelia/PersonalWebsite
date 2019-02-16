@@ -170,6 +170,10 @@ input[type="submit"], .button {
 	}
 }
 
+.button_wrapper{
+	margin: 4em 0 0 0;
+	text-align: center;
+}
 .copyright{
 	float: left;
 	font-size: .9em;
@@ -182,6 +186,13 @@ input[type="submit"], .button {
 	text-align: center;
 	border-bottom: 1px solid #E9E9E9;
 	padding: 3em 0;
+}
+
+.project_button {
+	background: #8bc6db;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 1em 2em;
 }
 
 .main_footer nav {

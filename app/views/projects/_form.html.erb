@@ -1,26 +1,22 @@
-<<<<<<< HEAD
-	 <% if @projects.errors.any? %>
-	<h2> <% pluralize(@projects.errors.count, "error") %> prevented this project from saving: </h2>
+<%= form_for @project do |f| %>
+	 <% if @project.errors.any? %>
+	<h2> <% pluralize(@project.errors.count, "error") %> prevented this project from saving: </h2>
 	<ul>
-		<% @projects.errors.full_messages.each do |msg| %>
-=======
-<%= form_for @post do |f| %>
-	 <% if @post.errors.any? %>
-	<h2> <% pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
-	<ul>
-		<% @post.errors.full_messages.each do |msg| %>
->>>>>>> master
+		<% @project.errors.full_messages.each do |msg| %>
 		<li> <% msg %> </li>
 	</ul>
-	<%end %>
+<%end %>
 <%end %>
 <%= f.label :title %> <br>
 <%= f.text_field :title %> 
 <br>
 <br>
-
-<<<<<<< HEAD
 <%= f.label :description, "Write your Project here"%> <br>
+<%= f.text_area :description %> 
+
+<br>
+
+<%= f.label :description %> <br>
 <%= f.text_area :description %> 
 
 <br>
@@ -29,13 +25,6 @@
 <%= f.text_field :link %> 
 <br>
 
-=======
-<%= f.label :content, "Write your article here"%> <br>
-<%= f.text_area :content %> 
-
-<br>
-
->>>>>>> master
 <%= f.submit %>
 
 <%end %>
