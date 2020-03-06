@@ -63,7 +63,7 @@ gem "pygments.rb", "~> 1.2"
 gem "redcarpet", "~> 3.4"
 
 
-gem "devise", "~> 4.5"
+gem "devise", "~> 4.7"
 
 gem "postgresql", "~> 1.0"
 
