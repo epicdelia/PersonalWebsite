@@ -124,7 +124,7 @@ GEM
     postgresql (1.0.0)
       pg
     public_suffix (3.0.3)
-    puma (3.12.0)
+    puma (3.12.4)
     pygments.rb (1.2.1)
       multi_json (>= 1.0.0)
     rack (2.0.6)
@@ -243,7 +243,7 @@ DEPENDENCIES
   normalize-rails
   pg
   postgresql (~> 1.0)
-  puma (~> 3.11)
+  puma (~> 3.12)
   pygments.rb (~> 1.2)
   rails (~> 5.2.1)
   rails_12factor
