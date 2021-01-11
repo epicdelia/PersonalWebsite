@@ -60,7 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "pygments.rb", "~> 1.2"
 
-gem "redcarpet", "~> 3.4"
+gem "redcarpet", "~> 3.5"
 
 
 gem "devise", "~> 4.5"
